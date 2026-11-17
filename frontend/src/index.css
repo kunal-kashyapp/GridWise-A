@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --canvas: #F5F0E6;
+    --card: #FFFBF4;
+    --card-alt: #EDE8DC;
+    --border-warm: #D4C9B5;
+    --text-espresso: #2C1810;
+    --text-muted: #6B5B4E;
+    --forest: #2D6A2E;
+    --forest-light: #E8F5E3;
+    --forest-dark: #1E4D1F;
+    --walnut: #7A5C2E;
+    --walnut-light: #F0E6D3;
+    --alert-red: #B8372D;
+    --alert-amber: #D4920A;
+  }
+
+  body {
+    background-color: var(--canvas);
+    color: var(--text-espresso);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Custom Warm Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #EDE8DC;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D4C9B5;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7A5C2E;
+  }
+}
+
+@layer utilities {
+  .bg-canvas {
+    background-color: #F5F0E6;
+  }
+  .bg-card {
+    background-color: #FFFBF4;
+  }
+  .bg-card-alt {
+    background-color: #EDE8DC;
+  }
+  .border-warm {
+    border-color: #D4C9B5;
+  }
+  .text-espresso {
+    color: #2C1810;
+  }
+  .text-espresso-muted {
+    color: #6B5B4E;
+  }
+}
